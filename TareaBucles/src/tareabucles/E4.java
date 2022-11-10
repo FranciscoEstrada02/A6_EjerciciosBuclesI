@@ -26,5 +26,6 @@ public class E4 {
             totalVentas = totalVentas + sumaVentas;
         }
         System.out.println("El total de ventas es: " + totalVentas);
+        sc.close();
     }
 }

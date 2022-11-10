@@ -35,5 +35,6 @@ public class E3 {
                 }
             }
         }
+        sc.close();
     }
 }

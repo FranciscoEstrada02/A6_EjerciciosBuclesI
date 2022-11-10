@@ -21,6 +21,6 @@ public class E9 {
         for(int i = 0; i < palabra.length()/2;i++){
             System.out.println(palabra.charAt(i));
         }
-        
+        sc.close();
     }
 }

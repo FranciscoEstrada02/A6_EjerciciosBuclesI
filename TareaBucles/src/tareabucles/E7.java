@@ -34,6 +34,7 @@ public class E7 {
         } else {
             System.out.println("No es capicua");
         }
+        sc.close();
     }
 
 }
