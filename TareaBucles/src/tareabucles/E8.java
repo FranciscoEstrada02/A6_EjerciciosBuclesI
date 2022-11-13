@@ -1,3 +1,5 @@
+package tareabucles;
+
 
 import java.util.Scanner;
 
