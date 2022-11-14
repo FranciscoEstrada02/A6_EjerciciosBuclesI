@@ -33,5 +33,6 @@ public class E6 {
             }
         }
         
+        sc.close();
     }
 }
