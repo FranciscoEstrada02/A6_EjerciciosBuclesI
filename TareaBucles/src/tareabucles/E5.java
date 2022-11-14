@@ -30,7 +30,7 @@ public class E5 {
                 mayor = valores;
             }
             // menor
-            if (valores > -1 && valores < -1) {
+            if (valores == -1) {
                 condicion = false;
             } else if (valores <= menor) {
                 menor = valores;
@@ -54,7 +54,7 @@ public class E5 {
                 condicion = false;
                 System.out.printf("El mayor de los numeros:%d \n" +
                         "El menor de los numeros: %d \n" +
-                        "La suma de todos los números: %.2f\n" +
+                        "La suma de todos los numeros: %.2f\n" +
                         "La suma de todos los positivos: %.2f\n" +
                         "La suma de todos los negativos: %.2f\n" +
                         "La media de todos los numeros: %.2f\n", mayor, menor, suma, sumaPositivos, sumaNegativos,

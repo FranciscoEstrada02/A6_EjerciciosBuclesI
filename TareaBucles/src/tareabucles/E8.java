@@ -41,47 +41,50 @@ public class E8 {
             int posiciones = sc.nextInt();
 
             if (direccion.equals(abajo)) {
-                //int ejeYFinal = ejeY - posiciones;
+                int ejeYFinal = ejeY - posiciones;
                 while (condicion2) {
                     System.out.printf("El personaje se mueve a la posición x = %d, y = %d\n", ejeX, ejeY);
-                    ejeY--;
+                    
 
-                    if (ejeY < mayor) {
+                    if (ejeY == ejeYFinal) {
                         condicion2 = false;
                     }
+                    ejeY--;
                 }
             }
             if (direccion.equals(arriba)) {
                 int ejeYFinal = ejeY + posiciones;
                 while (condicion2) {
                     System.out.printf("El personaje se mueve a la posición x = %d, y = %d\n", ejeX, ejeY);
-                    ejeY++;
-
-                    if (ejeY > ejeYFinal) {
+                    
+                    if (ejeY == ejeYFinal) {
                         condicion2 = false;
                     }
+                    ejeY++;
                 }
             }
             if (direccion.equals(izquierda)) {
                 int ejeXFinal = ejeX - posiciones;
                 while (condicion2) {
                     System.out.printf("El personaje se mueve a la posición x = %d, y = %d\n", ejeX, ejeY);
-                    ejeY--;
+                    
 
-                    if (ejeX < ejeXFinal) {
+                    if (ejeX == ejeXFinal) {
                         condicion2 = false;
                     }
+                    ejeX--;
                 }
             }
             if (direccion.equals(derecha)) {
                 int ejeXFinal = ejeX + posiciones;
                 while (condicion2) {
                     System.out.printf("El personaje se mueve a la posición x = %d, y = %d\n", ejeX, ejeY);
-                    ejeY--;
+                    
 
                     if (ejeX  > ejeXFinal) {
                         condicion2 = false;
                     }
+                    ejeX++;
                 }
             }
 
