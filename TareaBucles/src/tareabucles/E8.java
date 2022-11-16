@@ -26,6 +26,8 @@ public class E8 {
         System.out.println("Ingrese su posicia inical en el eje Y");
         int ejeY = sc.nextInt();
 
+        System.out.println(ejeX + ", " + ejeY);
+
         // Limpieza buffer
         sc.nextLine();
 
@@ -41,46 +43,52 @@ public class E8 {
             int posiciones = sc.nextInt();
 
             if (direccion.equals(abajo)) {
-                //int ejeYFinal = ejeY - posiciones;
-                while (condicion2) {
-                    System.out.printf("El personaje se mueve a la posición x = %d, y = %d\n", ejeX, ejeY);
-                    ejeY--;
 
-                    if (ejeY < mayor) {
+                int ejeYFinal = ejeY - posiciones;
+                while (condicion2) {
+                    ejeY--;
+                    System.out.printf("El personaje se mueve a la posición x = %d, y = %d\n", ejeX, ejeY);
+
+                    if (ejeY == ejeYFinal) {
                         condicion2 = false;
+                        condicion1 = false;
                     }
                 }
             }
             if (direccion.equals(arriba)) {
                 int ejeYFinal = ejeY + posiciones;
                 while (condicion2) {
-                    System.out.printf("El personaje se mueve a la posición x = %d, y = %d\n", ejeX, ejeY);
                     ejeY++;
+                    System.out.printf("El personaje se mueve a la posición x = %d, y = %d\n", ejeX, ejeY);
 
-                    if (ejeY > ejeYFinal) {
+                    if (ejeY == ejeYFinal) {
                         condicion2 = false;
+                        condicion1 = false;
                     }
                 }
             }
             if (direccion.equals(izquierda)) {
                 int ejeXFinal = ejeX - posiciones;
                 while (condicion2) {
+                    ejeX--;
                     System.out.printf("El personaje se mueve a la posición x = %d, y = %d\n", ejeX, ejeY);
-                    ejeY--;
 
-                    if (ejeX < ejeXFinal) {
+                    if (ejeX == ejeXFinal) {
                         condicion2 = false;
+                        condicion1 = false;
                     }
                 }
             }
             if (direccion.equals(derecha)) {
                 int ejeXFinal = ejeX + posiciones;
                 while (condicion2) {
+                    ejeX++;
                     System.out.printf("El personaje se mueve a la posición x = %d, y = %d\n", ejeX, ejeY);
-                    ejeY--;
-
-                    if (ejeX  > ejeXFinal) {
+                    
+                    
+                    if (ejeX == ejeXFinal) {
                         condicion2 = false;
+                        condicion1 = false;
                     }
                 }
             }

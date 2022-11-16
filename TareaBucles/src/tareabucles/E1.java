@@ -4,6 +4,8 @@
  */
 package tareabucles;
 
+import javax.sound.sampled.SourceDataLine;
+
 /**
  *
  * @author FranciscoEstradaCuen
@@ -20,6 +22,9 @@ public class E1 {
             suma = suma + i;
         }
         System.out.println("La suma es de los 100 primeros numeros es: " + suma);
+
+        
     }
+
     
 }
