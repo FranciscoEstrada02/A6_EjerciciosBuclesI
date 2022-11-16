@@ -43,28 +43,43 @@ public class E8 {
             int posiciones = sc.nextInt();
 
             if (direccion.equals(abajo)) {
+<<<<<<< HEAD
 
                 int ejeYFinal = ejeY - posiciones;
                 while (condicion2) {
                     ejeY--;
                     System.out.printf("El personaje se mueve a la posición x = %d, y = %d\n", ejeX, ejeY);
 
+=======
+                int ejeYFinal = ejeY - posiciones;
+                while (condicion2) {
+                    System.out.printf("El personaje se mueve a la posición x = %d, y = %d\n", ejeX, ejeY);
+                    
+
+>>>>>>> 0ad569b335fcde9bc5839071fc6651201e1e6c52
                     if (ejeY == ejeYFinal) {
                         condicion2 = false;
                         condicion1 = false;
                     }
+                    ejeY--;
                 }
             }
             if (direccion.equals(arriba)) {
                 int ejeYFinal = ejeY + posiciones;
                 while (condicion2) {
+<<<<<<< HEAD
                     ejeY++;
                     System.out.printf("El personaje se mueve a la posición x = %d, y = %d\n", ejeX, ejeY);
 
+=======
+                    System.out.printf("El personaje se mueve a la posición x = %d, y = %d\n", ejeX, ejeY);
+                    
+>>>>>>> 0ad569b335fcde9bc5839071fc6651201e1e6c52
                     if (ejeY == ejeYFinal) {
                         condicion2 = false;
                         condicion1 = false;
                     }
+                    ejeY++;
                 }
             }
             if (direccion.equals(izquierda)) {
@@ -72,11 +87,16 @@ public class E8 {
                 while (condicion2) {
                     ejeX--;
                     System.out.printf("El personaje se mueve a la posición x = %d, y = %d\n", ejeX, ejeY);
+<<<<<<< HEAD
+=======
+                    
+>>>>>>> 0ad569b335fcde9bc5839071fc6651201e1e6c52
 
                     if (ejeX == ejeXFinal) {
                         condicion2 = false;
                         condicion1 = false;
                     }
+                    ejeX--;
                 }
             }
             if (direccion.equals(derecha)) {
@@ -85,11 +105,17 @@ public class E8 {
                     ejeX++;
                     System.out.printf("El personaje se mueve a la posición x = %d, y = %d\n", ejeX, ejeY);
                     
+<<<<<<< HEAD
                     
                     if (ejeX == ejeXFinal) {
+=======
+
+                    if (ejeX  > ejeXFinal) {
+>>>>>>> 0ad569b335fcde9bc5839071fc6651201e1e6c52
                         condicion2 = false;
                         condicion1 = false;
                     }
+                    ejeX++;
                 }
             }
 
